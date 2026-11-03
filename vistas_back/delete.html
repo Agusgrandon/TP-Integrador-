@@ -11,8 +11,10 @@
 
 <body>
     <header>
+        <div class="logo-container">
+            <img class="logo-header" src="./img/logo.jpg" alt="logo">
+        </div>
         <nav>
-            <h1>Titulo</h1>
             <ul>
                 <li class="li-header">
                     <a href="./index.html">Principal</a>
@@ -32,6 +34,7 @@
             </ul>
         </nav>
     </header>
+
     <main>
         <h3>Consultar producto por id</h3>
 
@@ -45,6 +48,7 @@
 
         <section id="contenedor-productos"></section>
     </main>
+
     <script>
         const urlBase = "http://localhost:3000";
         const contenedorProductos = document.getElementById("contenedor-productos");
@@ -65,7 +69,7 @@
                 console.log(response);
 
                 // Accemos al JSON dentro del cuerpo de la respuesta y lo convertimos a objeto JS
-                const data = await response.json(); 
+                const data = await response.json();
 
                 const producto = data.payload[0]; // Traigo el primer objeto de mi array (de 1 solo objeto)
 

@@ -9,6 +9,10 @@ header {
     justify-content: center;
     padding-bottom: 0 !important;
 }
+.logo-header {
+    width: 64px;
+    border-radius: 50%;
+}
 ul {
     padding-left: 0;
     list-style-type: none;
