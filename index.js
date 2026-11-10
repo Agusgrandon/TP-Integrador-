@@ -8,6 +8,8 @@ const app = express();
 const PORT = environments.port;
 
 app.use(cors());
+app.use(express.json()); 
+
 // middlewares, es una funcion que esta en medio de la peticion y la respuesta
 app.use((req, res, next) => {
     const fecha = new Date();
